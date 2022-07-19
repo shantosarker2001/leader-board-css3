@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:ital,wght@0,400;0,500;1,300&family=Roboto+Slab&display=swap');
+
+/* common styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
+}
+
+.container {
+    width: 870px;
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* top player_style  */
+hr {
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+
+.top_players {
+    margin-bottom: 30px;
+}
+
+.section_title {
+    color: #562EFF;
+    margin-top: 3px;
+    font-size: 24px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+
+}
+
+.player_name {
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+.player {
+    display: flex
+}
+
+/* top blogs styles */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog .thumbnail img {
+    height: 117px;
+    width: 177px;
+}
+
+.blog_info {
+    margin-left: 16px
+}
+
+.blog_title {
+    font-size: 20px;
+}
+
+.blog_author {
+    font-size: 16px;
+    color: #9f9f9f;
+}
+
+.blog_author a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #562EFF;
+}
+
+/*-------------------
+    Latest-Courses
+ ----------------- */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+}
+
+.course {}
+
+.course img {
+    width: 224px;
+    height: 104px;
+}
+
+.c_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.c_duration {
+    background-color: #FFE4E8;
+    border-radius: 15px;
+    height: 30px;
+    width: 95px;
+    text-align: center;
+    font-size: 15px;
+    color: #FF4A60;
+    padding-top: 5px;
+    margin-right: 10px;
+}
+
+.fa-star {
+    font-size: 14px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: lightgray
+}
+
+/* Media Queries */
+@media only screen and (max-width:668px) {
+    .container {
+        width: 100%;
+    }
+
+    .section_title,
+    .blog_title {
+        text-align: center;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog,
+    .course {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courses {
+        text-align: center;
+    }
+}
